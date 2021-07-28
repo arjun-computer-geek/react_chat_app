@@ -1,0 +1,122 @@
+.chatPage{
+    background: rgba(103, 236, 230, 0.87);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.charContainer{
+    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 80%;
+    width: 50%;
+    background: rgba(226, 223, 223, 0.925);
+    border-radius: 20px;
+    /* padding: 20px; */
+}
+
+.header{
+    background: crimson;
+    height: 15%;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > h2{
+    color: white;
+    margin: 1vmax;
+}
+.closeBtn{
+    height: auto;
+}
+.closeBtn img{
+    margin: 2.5vmax;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.closeBtn img:hover{
+    background: white;
+    border-radius: 15px;
+    transform: scale(1.2);
+}
+
+.chatBox{
+    /* border: 2px solid black; */
+    height: 70%;
+    /* overflow-y: auto; */
+}
+
+.inputBox{
+    /* border: 2px solid black; */
+    height: 15%;
+    display: flex;
+    border-radius: 0 0 20px 20px;
+}
+
+#chatInput{
+    width: 80%;
+    border: none;
+    padding: 1vmax;
+    outline: none;
+    border-radius: 0 0 0 20px;
+    font-size: 1.5vmax;
+}
+
+.sendBtn{
+    background: crimson;
+    border: none;
+    color: white;
+    width: 20%;
+    font-size: 1.5vmax;
+    border-radius: 0 0 20px 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sendBtn:hover{
+    background: rgba(189, 9, 45, 0.911);
+}
+
+.sendBtn img{
+    width: 4vmax;
+    filter: brightness(100) invert();
+    transition: all .3s;
+}
+
+.sendBtn:hover img{
+    transform: translateX(10px);
+} 
+
+
+@media(max-aspect-ratio: 7/10){
+
+    .charContainer{
+        
+        height: 97%;
+        width: 95%;
+    }
+    
+    .header{
+        height: 10%;
+    }
+    
+    
+    .closeBtn img:hover{
+        transform: scale(1.4);
+    }
+    
+    .chatBox{
+        height: 83%;
+    }
+    
+    .inputBox{
+        height: 7%;
+    }
+}

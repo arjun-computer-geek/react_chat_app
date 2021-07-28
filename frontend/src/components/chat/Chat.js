@@ -8,7 +8,7 @@ import ReactScrollToBottom from 'react-scroll-to-bottom';
 import closeIcon from '../../images/closeIcon.png';
 import { Link } from 'react-router-dom';
 
-const ENDPOINT = 'http://localhost:5000/';
+const ENDPOINT = 'https://react-chat-app-arjun.herokuapp.com/';
 let socket;
 
 const Chat = () => {

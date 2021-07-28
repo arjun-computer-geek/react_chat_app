@@ -14,7 +14,6 @@
     width: 50%;
     background: rgba(226, 223, 223, 0.925);
     border-radius: 20px;
-    /* padding: 20px; */
 }
 
 .header{
@@ -96,27 +95,37 @@
 
 
 @media(max-aspect-ratio: 7/10){
+    .chatPage{
+        height: 91.3vh;
+    }
 
     .charContainer{
-        
-        height: 97%;
-        width: 95%;
+        height: 100% !important;
+        width: 100% !important;
     }
     
     .header{
-        height: 10%;
+        height: 10% !important;
+    }
+
+    .header > h2{
+        margin: 8vw !important;
+        font-size: 6vw !important;
     }
     
-    
     .closeBtn img:hover{
-        transform: scale(1.4);
+        transform: scale(1.4) !important;
     }
     
     .chatBox{
-        height: 83%;
+        height: 83% !important;
     }
     
     .inputBox{
-        height: 7%;
+        height: 7% !important;
+    }
+    #chatInput{
+        padding: 4vw !important;
+        font-size: 4vw !important;
     }
 }

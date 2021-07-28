@@ -62,13 +62,20 @@
 
 @media(max-aspect-ratio: 7/10){
 
+    .joinPage{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start !important;
+    }
+
     .joinContainer{
-        width: 75%;
-        height: 40vh;
+        margin-top: 20vw !important;
+        width: 90vw;
+        height: auto;
     }
 
     .joinContainer img{
-        width: 8vmax;
+        width: 8vw;
     }
     
     .joinContainer h1{
